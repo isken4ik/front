@@ -85,7 +85,6 @@ h2.title {
     font-weight: 300;
     font-size: 21px;
     line-height: 28px;
-    text-align: center;
     color: #ffffff;
 }
 .promo .promo_text span {
@@ -198,7 +197,7 @@ h2.title {
 }
 
 .optimization{
-    min-width: 550px;
+    min-height: 555px;
     padding: 102px 0 107px 0;
 }
 .optimization .optimization_header {
