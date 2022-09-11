@@ -299,3 +299,43 @@ nav
         width: 100%
         background-color: #070716
         z-index: 1
+
+
+.require
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0
+    &_title
+        font-weight: 400
+        font-size: 22px
+        color: #1CA8C3
+    &_list
+        margin-top: 22px
+        list-style-type: none
+        padding-left: 50px
+        li  
+            position: relative
+            font-weight: 300
+            font-size: 17px
+            line-height: 24px
+            margin-bottom: 10px
+            vertical-align: center
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 20px
+                height: 21px
+                background: url(/../icons/done/done_green.png) center (center/ cover) no-repeat
+    .warning
+        .require_title
+            color: $second-color
+        .require_list
+            li
+                &::before
+                    background: url(/../icons/done/done_red.png) center (center/ cover) no-repeat
+                
