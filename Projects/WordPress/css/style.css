@@ -363,8 +363,8 @@ h2.title {
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    text-align: center;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     color: #888888;
     line-height: 21px;
+    text-align: center;
 }
