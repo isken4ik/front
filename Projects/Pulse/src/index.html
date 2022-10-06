@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
     
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -67,7 +69,7 @@
             </h2>
             <div class="benefis__wrapper">
                 <div class="benefis__item">
-                    <img src="icons/second_section/cup.png" alt="cup">
+                    <img src="icons/second_section/cup.svg" alt="cup">
                     <div class="benefis__subtitle">
                         Делимся опытом
                     </div>
@@ -76,7 +78,7 @@
                     </div>
                 </div>
                 <div class="benefis__item">
-                    <img src="icons/second_section/heart.png" alt="heart">
+                    <img src="icons/second_section/heart.svg" alt="heart" class="benefis__item_animated">
                     <div class="benefis__subtitle">
                         Заботимся о здоровье
                     </div>
@@ -85,7 +87,7 @@
                     </div>
                 </div>
                 <div class="benefis__item">
-                    <img src="icons/second_section/shoe.png" alt="shoe">
+                    <img src="icons/second_section/shoe.svg" alt="shoe">
                     <div class="benefis__subtitle">
                         Учим бегать
                     </div>
@@ -117,7 +119,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div><img src="images/slide/slide_1.jpg" alt=""></div>
@@ -125,7 +127,7 @@
                 <div><img src="images/slide/slide_3.jpg" alt=""></div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -401,7 +403,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews__item">
+            <div class="reviews__item wow animate__animated animate__fadeInUp data-wow-duration='1s' data-wow-delay='1s'">
                 <img class="reviews__img" src="images/review/photo_1.jpg" alt="review">
                 <div class="reviews__text">
                     <div class="reviews__name">Ирина Иванченко</div>
@@ -417,19 +419,18 @@
                     </div>
                 </div>
 
-            </div> 
-            <div class="reviews__item">
+            </div>  
+            <div class="reviews__item wow animate__animated animate__fadeInUp data-wow-duration='1s' data-wow-delay='1s'">
                 <img class="reviews__img" src="images/review/photo_2.jpg" alt="review">
                 <div class="reviews__text">
                     <div class="reviews__name">Иван Сёмочкин</div>
                     <div class="reviews__count">1 полумарафон</div>
                     <div class="reviews__descr">
-                        Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе <br> делал. <br> Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели <br> первую тренировку, научили пользоваться новым гаджетом. Также объяснили <br> основы анатомии, составили план тренировок на месяц вперёд. <br><br> С ними подготовился к своему первому полумарафону! Спасибо!!!
+                        Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе <br> делал. <br> Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели <br> первую тренировку, научили пользоваться новым гаджетом. Также объяснили <br> основы анатомии, составили план тренировок на месяц вперёд. <br> <br> С ними подготовился к своему первому полумарафону! Спасибо!!!
                     </div>
                 </div>
-
             </div>  
-            <div class="reviews__item">
+            <div class="reviews__item wow animate__animated animate__fadeInUp data-wow-duration='1s' data-wow-delay='1s'">
                 <img class="reviews__img" src="images/review/photo_3.jpg" alt="review">
                 <div class="reviews__text">
                     <div class="reviews__name">Юлия Дашкина</div>
@@ -470,9 +471,9 @@
                 и мы перезвоним вам в течении 10 минут
             </div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input na placeholder="Ваше имя" type="text">
-                <input nam placeholder="Ваш телефон" type="number">
-                <input nam placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="email" placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -500,11 +501,17 @@
         </div>
     </div>
 
-    
+    <a href="#up" class="pageup">
+        <img  src="icons/arrows/left_arrow.svg" alt="">
+    </a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
     
 </body>

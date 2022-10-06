@@ -1,6 +1,7 @@
 .benefis
     min-height: 475px
     padding: 70px 0 65px 0
+    background: #F6F6F6
     &__title
         display: block
         margin: 0 auto
@@ -31,3 +32,8 @@
         line-height: 18px
         text-align: center
         color: $second-color
+    &__item
+        &_animated
+            animation: heardbeat 1.5s ease infinite
+            &:hover
+                animation-play-state: paused
